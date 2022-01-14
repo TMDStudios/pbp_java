@@ -7,12 +7,13 @@ public class Main {
     public static void main(String[] args) {
         boolean exit = false;
         Scanner reader = new Scanner(System.in);
+        NumbersGame numbersGame = new NumbersGame();
 
         while(!exit){
             printWelcome();
             switch (reader.nextLine()){
                 case "1":
-                    System.out.println("Launching Numbers Game");
+                    numbersGame.game();
                     break;
                 case "2":
                     System.out.println("Launching Calculator");
