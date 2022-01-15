@@ -8,6 +8,7 @@ public class Main {
         boolean exit = false;
         Scanner reader = new Scanner(System.in);
         NumbersGame numbersGame = new NumbersGame();
+        Calculator calculator = new Calculator();
 
         while(!exit){
             printWelcome();
@@ -16,7 +17,7 @@ public class Main {
                     numbersGame.game();
                     break;
                 case "2":
-                    System.out.println("Launching Calculator");
+                    calculator.start();
                     break;
                 case "3":
                     System.out.println("Launching Guess The Phrase");
@@ -36,10 +37,10 @@ public class Main {
 
     public static void printWelcome(){
         String message = "This is a collection of select Project Based Python projects";
+        for(int i = 0; i<message.length(); i++){System.out.print("*");}
         System.out.println();
-        for(int i = 0; i<message.length(); i++){
-            System.out.print("*");
-        }
+        System.out.println(message);
+        for(int i = 0; i<message.length(); i++){System.out.print("*");}
         System.out.println();
         System.out.println("Choose from the following menu:");
         System.out.println("1 => Numbers Game");
