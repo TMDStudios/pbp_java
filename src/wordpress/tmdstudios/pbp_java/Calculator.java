@@ -39,6 +39,10 @@ public class Calculator {
                 }
             }
         }
+
+        System.out.println();
+        System.out.println("Press 'Enter' to continue");
+        reader.nextLine();
     }
 
     public float calculate(float num1, char operator, float num2){

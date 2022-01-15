@@ -21,6 +21,7 @@ public class NumbersGame {
                 int guess = reader.nextInt();
                 if(guess == answer){
                     System.out.println("You got it!");
+                    break;
                 }else{
                     if(count==2){
                         System.out.println("You lose. The number was "+answer+".");
@@ -36,6 +37,11 @@ public class NumbersGame {
             }
         }
         System.out.println("Game Finished");
+
+        System.out.println();
+        System.out.println("Press 'Enter' to continue");
+        reader.nextLine();
+        reader.nextLine(); // Why is this necessary?
     }
 
 }
