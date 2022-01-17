@@ -10,6 +10,7 @@ public class Main {
         NumbersGame numbersGame = new NumbersGame();
         Calculator calculator = new Calculator();
         GuessThePhrase guessThePhrase = new GuessThePhrase();
+        UsernameAndPassword usernameAndPassword = new UsernameAndPassword();
 
         while(!exit){
             printWelcome();
@@ -24,7 +25,7 @@ public class Main {
                     guessThePhrase.game();
                     break;
                 case "4":
-                    System.out.println("Username and Password");
+                    usernameAndPassword.start();
                     break;
                 case "5":
                     exit = true;
